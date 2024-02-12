@@ -1,58 +1,23 @@
 package com.example;
 
-public class Book {
-    private String title;
-    private String author;
-    private String isbn;
-    private int publicationYear;
-    private boolean available; 
+public class Book extends LibraryItem {
+    private String genre;
 
-    public Book(String title, String author, String isbn, int publicationYear, boolean available) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.publicationYear = publicationYear;
-        this.available = available;
+    public Book(String title, String author, String isbn, int publicationYear, boolean available, String genre) {
+        super(title, author, isbn, publicationYear, available);
+        this.genre = genre;
     }
 
-    public String getTitle() {
-        return title;
+    @Override
+    public String getInfo() {
+       return "Book: " + getTitle() + ", Author: " + getAuthor() + ", ISBN: " + getIsbn() + ", Published: " + getPublicationYear() + ", Available: " + isAvailableString() + ", Genre: " + genre;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getGenre() {
+        return genre;
     }
 
-    public String getIsbn() {
-        return isbn;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
-
-    public int getPublicationYear() {
-        return publicationYear;
-    }
-
-    public boolean getAvailable() {
-        return available;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-    public void setPublicationYear(int publicationYear) {
-        this.publicationYear = publicationYear;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
-
 }
