@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Library {
     private String name;
-    private List<Book> books;
+    private List<LibraryItem> catalog;
     private List<Patron> patrons;
     private List<Borrowing> borrowings;
 
     // Constructor 
     public Library() {
         // Initialize lists
-        this.books = new ArrayList<>();
+        this.catalog = new ArrayList<>();
         this.patrons = new ArrayList<>();
         this.borrowings = new ArrayList<>();
     }
@@ -26,8 +26,8 @@ public class Library {
         return name;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public List<LibraryItem> getCatalog() {
+        return catalog;
     }
 
     public List<Patron> getPatrons() {
@@ -36,5 +36,13 @@ public class Library {
 
     public List<Borrowing> getBorrowings() {
         return borrowings;
+    }
+
+    public void addItem(LibraryItem item) {
+        catalog.add(item);
+    }
+
+    public void removeItem(LibraryItem item) {
+        catalog.remove(item);
     }
 }
