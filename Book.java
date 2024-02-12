@@ -1,5 +1,3 @@
-package com.example.library;
-
 public class Book {
     private String title;
     private String author;
@@ -7,7 +5,7 @@ public class Book {
     private int publicationYear;
     private boolean available; 
 
-    public Book(String title, String author, String isbn, int publicationYear, boolean avaiable) {
+    public Book(String title, String author, String isbn, int publicationYear, boolean available) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
