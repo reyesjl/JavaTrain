@@ -10,7 +10,12 @@ public class Book extends LibraryItem {
 
     @Override
     public String getInfo() {
-       return "Book: " + getTitle() + ", Author: " + getAuthor() + ", ISBN: " + getIsbn() + ", Published: " + getPublicationYear() + ", Available: " + isAvailableString() + ", Genre: " + genre;
+       return "Book: " + getTitle() + 
+       ", Author: " + getAuthor() + 
+       ", ISBN: " + getIsbn() + 
+       ", Published: " + getPublicationYear() + 
+       ", Available: " + isAvailableString() + 
+       ", Genre: " + genre;
     }
 
     public String getGenre() {
