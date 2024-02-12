@@ -6,14 +6,12 @@ public class Library {
     private String name;
     private List<LibraryItem> catalog;
     private List<Patron> patrons;
-    private List<Borrowing> borrowings;
 
     // Constructor 
     public Library() {
         // Initialize lists
         this.catalog = new ArrayList<>();
         this.patrons = new ArrayList<>();
-        this.borrowings = new ArrayList<>();
     }
 
     // Constructor with name
@@ -32,10 +30,6 @@ public class Library {
 
     public List<Patron> getPatrons() {
         return patrons;
-    }
-
-    public List<Borrowing> getBorrowings() {
-        return borrowings;
     }
 
     public void addItem(LibraryItem item) {

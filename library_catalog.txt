@@ -1,0 +1,25 @@
+# BOOKS
+=======
+* To Kill a Mockingbird, Harper Lee, ISBN001, 1960, Fiction
+* The Great Gatsby, F. Scott Fitzgerald, ISBN002, 1925, Fiction
+* 1984, George Orwell, ISBN003, 1949, Dystopian Fiction
+* Pride and Prejudice, Jane Austen, ISBN004, 1813, Romance
+* The Catcher in the Rye, J.D. Salinger, ISBN005, 1951, Fiction
+* The Lord of the Rings, J.R.R. Tolkien, ISBN006, 1954, Fantasy
+* To the Lighthouse, Virginia Woolf, ISBN007, 1927, Modernist Literature
+* Brave New World, Aldous Huxley, ISBN008, 1932, Dystopian Fiction
+* Moby-Dick, Herman Melville, ISBN009, 1851, Adventure
+* War and Peace, Leo Tolstoy, ISBN010, 1869, Historical Fiction
+
+# DVDS
+=======
+* Back to the Future, Robert Zemeckis, ISBN011, 1985, DVD
+* The Princess Bride, Rob Reiner, ISBN012, 1987, DVD
+* Pulp Fiction, Quentin Tarantino, ISBN013, 1994, DVD
+* The Matrix, The Wachowskis, ISBN014, 1999, DVD
+* The Lord of the Rings: The Fellowship of the Ring, Peter Jackson, ISBN015, 2001, DVD
+* The Dark Knight, Christopher Nolan, ISBN016, 2008, DVD
+* Inception, Christopher Nolan, ISBN017, 2010, DVD
+* Interstellar, Christopher Nolan, ISBN018, 2014, DVD
+* Parasite, Bong Joon-ho, ISBN019, 2019, DVD
+* Joker, Todd Phillips, ISBN020, 2019, DVD
