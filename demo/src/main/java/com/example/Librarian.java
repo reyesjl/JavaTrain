@@ -1,9 +1,9 @@
 package com.example;
 
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 public class Librarian {
     private Library library;
@@ -12,6 +12,10 @@ public class Librarian {
     public Librarian(Library library) {
         this.library = library;
         borrowings = new ArrayList<>();
+    }
+    
+    public Library getLibrary() {
+        return library;
     }
 
     public void checkout(Patron patron, LibraryItem item) {
@@ -34,7 +38,7 @@ public class Librarian {
             // if a borrowing exists by this patron with this item, return the book.
             if (borrowing.getPatron().equals(patron) && borrowing.getItem().equals(item)) {
                 borrowings.remove(borrowing);
-                break; // found the boorowing record
+                break; // found the borrowing record
             }
         }
 
@@ -48,18 +52,13 @@ public class Librarian {
         if (item instanceof Book) {
             // Books due back in two weeks
             calendar.add(Calendar.WEEK_OF_YEAR, 2);
-            Date twoWeeks = calendar.getTime();
-            return twoWeeks;
         } else if (item instanceof Dvd) {
-            // Dvds due back in one weeks
+            // Dvds due back in one week
             calendar.add(Calendar.WEEK_OF_YEAR, 1);
-            Date oneWeek = calendar.getTime();
-            return oneWeek;
         } else {
             // Everything else due back in 2 days
             calendar.add(Calendar.DAY_OF_WEEK, 2);
-            Date twoDays = calendar.getTime();
-            return twoDays;
         }
+        return calendar.getTime();
     }
 }
